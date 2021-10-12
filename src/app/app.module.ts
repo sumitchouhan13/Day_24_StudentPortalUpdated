@@ -14,6 +14,8 @@ import { UserEditComponent } from './user-edit/user-edit.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { AttendanceListComponent } from './attendance-list/attendance-list.component';
 import { ChartComponent } from './chart/chart.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,13 @@ import { ChartComponent } from './chart/chart.component';
     AttendanceListComponent,
     ChartComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NgxChartsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

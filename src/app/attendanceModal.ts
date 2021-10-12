@@ -3,3 +3,8 @@ export interface AttendanceList {
   date: string;
   present: Array<number>;
 }
+
+export interface attendanceChart {
+  name: string;
+  value: number;
+}
