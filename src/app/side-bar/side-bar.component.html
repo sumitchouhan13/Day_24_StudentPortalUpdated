@@ -1,0 +1,46 @@
+<div>
+  <ul
+    class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+    id="accordionSidebar"
+  >
+    <a
+      class="sidebar-brand d-flex align-items-center justify-content-center"
+      [routerLink]="['/']"
+    >
+      <div class="sidebar-brand-icon rotate-n-15">
+        <i class="fas fa-laugh-wink"></i>
+      </div>
+      <div class="sidebar-brand-text mx-3">SB SERVICES</div>
+    </a>
+    <hr class="sidebar-divider my-0" />
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/dashboard']">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Students List</span></a
+      >
+    </li>
+    <hr class="sidebar-divider" />
+    <div class="sidebar-heading">Attendance</div>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/attendance']">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Present Attendance</span></a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/attendanceList']">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Attendance List</span></a
+      >
+    </li>
+    <hr class="sidebar-divider" />
+    <div class="sidebar-heading">Attendance Visualiser</div>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/chart']">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Chart</span></a
+      >
+    </li>
+    <hr class="sidebar-divider d-none d-md-block" />
+  </ul>
+</div>
